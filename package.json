@@ -2,7 +2,10 @@
   "name": "hollow",
   "version": "0.1.0",
   "private": true,
-  "description": "Draw a space and hear it: a real-time 2D wave-equation acoustic simulator on WebGPU.",
+  "description": "Draw a room and hear it: a real-time 2D sound-wave simulator on your GPU (WebGPU).",
+  "license": "MIT",
+  "author": "Yahel Rozenblum",
+  "keywords": ["webgpu", "acoustics", "wave-equation", "simulation", "audio", "fdtd", "physics", "audioworklet"],
   "type": "module",
   "scripts": {
     "start": "node serve.mjs",

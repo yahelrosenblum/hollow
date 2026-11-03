@@ -1,22 +1,44 @@
 # Hollow
 
-Draw a space and hear it.
+**Draw a room. Hear it.**
 
-Your GPU solves the wave equation for the room you draw, and the sound is the air pressure at two grid cells beside your head. There is no reverb, panning, Doppler or occlusion effect in the code. Those all come out of the equation.
+Hollow is a free sound simulator that runs in your browser. Draw walls, doors and columns, clap, and hear what that room does to sound: the echo, the muffled bass behind a closed door, the way sound bends around a corner.
+
+None of that is an effect. Your graphics card solves the wave equation for the room you draw, tens of thousands of times a second, and the sound you hear is the air pressure at two grid cells beside your head. There is no reverb, panning, Doppler or occlusion code anywhere. Those all come out of the equation.
 
 **This is a 2D simulation.** It behaves like a very tall room, with long low-frequency tails, so it will not match a real three-dimensional building. It's an instrument and a way to understand sound, not a tool for predicting real spaces.
 
-## Run it
+![A clap in the Cathedral room: the wave bounces off the columns and gathers in the curved end](docs/images/cathedral.jpg)
 
-Needs Node 20 or later and a browser with WebGPU. There is nothing to install.
+![The welcome screen, with the cathedral sounding behind it](docs/images/welcome.jpg)
+
+## Try it
+
+**Live demo:** https://yahelrosenblum.github.io/hollow/ (needs a browser with WebGPU: recent desktop Chrome or Edge. Headphones help.)
+
+Or run it yourself. Needs Node 20 or later. There is nothing to install.
 
 ```bash
+git clone https://github.com/yahelrosenblum/hollow.git
+cd hollow
 node serve.mjs
 ```
 
-Then open http://127.0.0.1:8791. Tap anywhere to clap.
+Then open http://127.0.0.1:8791 and press **Clap to begin**.
 
-`artifact/index.html` is the same app, set up to publish as a claude.ai artifact. Its sandbox can't save files, use a microphone or open share links, and the page says so.
+## Five things to try
+
+1. **Clap in the Cathedral** and watch the wave bounce off the columns and gather in the curved end.
+2. **Open "Next door" and shut the door.** The bass gets through and the highs stay behind.
+3. **In Sources, press "Two opposed".** Two speakers cancel each other almost completely, until you step sideways.
+4. **Open "Organ pipe" and hold to blow.** Drag the pipe shorter and the note rises.
+5. **Open "Time mirror", clap, then rewind in the Time panel.** The sound gathers back to where it started.
+
+## Who it's for
+
+- People curious about how sound works, and teachers who want to show it.
+- Musicians and sound designers looking for rooms to try, and impulse responses to export.
+- Anyone who likes seeing real physics run live.
 
 ## What's in it
 
@@ -33,7 +55,7 @@ Then open http://127.0.0.1:8791. Tap anywhere to clap.
 | Challenge | 6 acoustic problems at 3 levels, scored only on what the simulation measures. |
 | Perf | History of GPU time, simulation rate, delay and dropouts. |
 
-Rooms autosave, survive a crash, and can be shared as a link. The link holds the whole room in the URL fragment, which browsers don't send to servers. Hollow has no server of its own beyond the local one above, and nothing you make leaves your device.
+Rooms autosave, survive a crash, and can be shared as a link. The link holds the whole room in the URL fragment, which browsers don't send to servers. Hollow has no backend, and nothing you make leaves your device. The only outside request is the page's fonts, which load from Google Fonts.
 
 Press `?` for keyboard shortcuts. In the room, the arrow keys move a cursor and Enter acts at that spot.
 
@@ -78,3 +100,18 @@ No dependencies and no build step: ES modules, WebGPU, WGSL and AudioWorklet.
 - `src/audit`, `tools`: the physics audit and browser test scripts.
 
 Samples go straight from the worker to the audio thread, so a busy interface can't cause a dropout.
+
+`artifact/index.html` is a copy of the page set up for publishing as a sandboxed claude.ai artifact, which can't save files, use a microphone or open share links.
+
+## Background
+
+The method is finite-difference time-domain (FDTD) simulation. Good starting points:
+
+- Webb and Bilbao, [Computer Room Acoustics Using 3D FDTD](https://www.pure.ed.ac.uk/ws/files/12456157/Computer_Room_Acoustics_Using_3D_FDTD.pdf)
+- Savioja, [Interactive Room Acoustic Simulation with FDTD](https://www.dafx.de/paper-archive/2010/DAFx10/Savioja_DAFx10_P43.pdf) (DAFx 2010)
+- The [NESS project](https://www.epcc.ed.ac.uk/whats-happening/articles/ness-next-generation-sound-synthesis-project-bows-out) on physical-modelling sound synthesis
+- Fink's work on time-reversal acoustics, which the Time panel demonstrates
+
+## License
+
+[MIT](LICENSE). Copyright (c) 2026 Yahel Rozenblum.
