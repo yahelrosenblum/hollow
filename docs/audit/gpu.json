@@ -1,0 +1,136 @@
+{
+  "when": "2026-11-02T12:55:38.640Z",
+  "adapter": {
+    "vendor": "nvidia",
+    "architecture": "lovelace"
+  },
+  "results": [
+    {
+      "id": "gpu-vs-cpu",
+      "label": "GPU field vs CPU reference, every material, after 4,000 steps",
+      "target": "under -80 dB",
+      "measured": "-58.6 dB raw, -80.3 dB with the silent constant offset removed; 32-bit rounding alone gives -63.0 dB raw, -79.8 dB without offset",
+      "pass": true,
+      "detail": {
+        "db": -58.573694664946345,
+        "waveDb": -80.32438999594072,
+        "doublePrecision": -66.58170158544785,
+        "roundingFloor": -62.95137131324209,
+        "waveFloor": -79.75868094007272,
+        "steps": 4000,
+        "nx": 140,
+        "ny": 90
+      },
+      "seconds": 2.064
+    },
+    {
+      "id": "gpu-probes",
+      "label": "GPU source injection and tapping vs CPU, moving points",
+      "target": "under -80 dB",
+      "measured": "-99.1 dB",
+      "pass": true,
+      "detail": {
+        "db": -99.07161655119609
+      },
+      "seconds": 0.3645
+    },
+    {
+      "id": "gpu-reed",
+      "label": "GPU reed vs CPU reference",
+      "target": "under -60 dB",
+      "measured": "-75.6 dB, peak 0.174",
+      "pass": true,
+      "detail": {
+        "db": -75.59705968447689,
+        "peak": 0.1744874268770218
+      },
+      "seconds": 0.06819999999925494
+    },
+    {
+      "id": "gpu-reversal",
+      "label": "GPU time reversal returns the waves to their start",
+      "target": "under -60 dB residual",
+      "measured": "1 s: -96.5 dB (raw -73.3); 3 s: -92.8 dB (raw -52.7); 13 s: -85.0 dB (raw -28.2)",
+      "pass": true,
+      "detail": {
+        "rows": [
+          {
+            "steps": 16000,
+            "seconds": 1,
+            "waveDb": -96.4646442247957,
+            "rawDb": -73.33964854537075,
+            "offset": 0.0011201875318856106
+          },
+          {
+            "steps": 48000,
+            "seconds": 3,
+            "waveDb": -92.8105418850293,
+            "rawDb": -52.681696943702114,
+            "offset": 0.0011699490471772185
+          },
+          {
+            "steps": 200000,
+            "seconds": 12.5,
+            "waveDb": -84.96537852956578,
+            "rawDb": -28.163833524048265,
+            "offset": 0.002037587934528599
+          }
+        ]
+      },
+      "seconds": 4.328800000000745
+    },
+    {
+      "id": "gpu-energy",
+      "label": "GPU energy drift, lossless room, 1,000,000 steps",
+      "target": "under 0.1%",
+      "measured": "1.868e-3%; peak 0.1334, mean -1.92e-2",
+      "pass": true,
+      "detail": {
+        "startEnergy": 3.084213766571328,
+        "endEnergy": 3.0842713844481873,
+        "drift": 0.000018681544542705645,
+        "peak": 0.13336876034736633,
+        "mean": -0.01916875268787925,
+        "seconds": 6.89810000000149
+      },
+      "seconds": 6.9168000000007455
+    },
+    {
+      "id": "gpu-throughput",
+      "label": "Throughput for a 12 x 7 m room, full audio workload",
+      "target": "at least one rate above 1.5x real time",
+      "measured": "11025 Hz: 4.17x (3.02 Gcell/s); 16000 Hz: 3.28x (7.20 Gcell/s); 22050 Hz: 2.04x (11.75 Gcell/s)",
+      "pass": true,
+      "detail": {
+        "rows": [
+          {
+            "rate": 11025,
+            "nx": 335,
+            "ny": 196,
+            "stepsPerSecond": 45944.86616058448,
+            "realtime": 4.167334799145985,
+            "gigacells": 3.0167399121039766
+          },
+          {
+            "rate": 16000,
+            "nx": 485,
+            "ny": 283,
+            "stepsPerSecond": 52471.5208847627,
+            "realtime": 3.2794700552976686,
+            "gigacells": 7.201978599038104
+          },
+          {
+            "rate": 22050,
+            "nx": 668,
+            "ny": 390,
+            "stepsPerSecond": 45087.228658920234,
+            "realtime": 2.044772274780963,
+            "gigacells": 11.746124810221898
+          }
+        ],
+        "lambda2": 0.74
+      },
+      "seconds": 4.7430999999977645
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "when": "2026-11-02T12:56:09.138Z",
+  "results": [
+    {
+      "id": "clap-latency",
+      "label": "Clap to speaker latency",
+      "target": "under 100 ms",
+      "measured": "median 96.3 ms, worst 98.3 ms (includes 50.0 ms device latency)",
+      "pass": true,
+      "detail": {
+        "rows": [
+          42.900000002235174,
+          46.30000000074506,
+          47.29999999701977,
+          46.29999999701977,
+          47.5,
+          46.099999997764826,
+          48.29999999701977,
+          36.399999998509884
+        ],
+        "device": 50
+      }
+    },
+    {
+      "id": "ear-tone",
+      "label": "A 440 Hz source arrives at the ear at 440 Hz",
+      "target": "within 0.1%",
+      "measured": "440.00 Hz; left 6.64e-2, right 4.85e-2 rms",
+      "pass": true,
+      "detail": {
+        "measured": 440.0007196986248
+      }
+    },
+    {
+      "id": "audio-sync",
+      "label": "Solver steps vs audio samples over 20 s",
+      "target": "no drift, no underruns",
+      "measured": "320170 steps against 320062 expected (0.034%); 0 underruns, 664 steps ahead of audio at the end, buffer target 40 ms",
+      "pass": true,
+      "detail": {
+        "soak": {
+          "start": {
+            "rate": 16000,
+            "steps": 165101,
+            "produced": 165101,
+            "consumed": 164608,
+            "underruns": 0,
+            "dropped": 0,
+            "errors": 0,
+            "targetSeconds": 0.04,
+            "batchMs": 6.599999997764826,
+            "gpuMs": 0,
+            "lastCount": 256,
+            "limiterReduction": 0,
+            "outputPeak": 0.011452189426953018,
+            "mode": "live",
+            "direction": 1
+          },
+          "end": {
+            "rate": 16000,
+            "steps": 485271,
+            "produced": 485101,
+            "consumed": 484607,
+            "underruns": 0,
+            "dropped": 0,
+            "errors": 0,
+            "targetSeconds": 0.04,
+            "batchMs": 5,
+            "gpuMs": 0,
+            "lastCount": 256,
+            "limiterReduction": 0,
+            "outputPeak": 4.719227407722186e-12,
+            "mode": "live",
+            "direction": 1
+          },
+          "elapsed": 20.00389999999851
+        },
+        "underruns": 0,
+        "lag": 664,
+        "errors": 0,
+        "dropped": 0
+      }
+    }
+  ]
+}

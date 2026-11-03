@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hollow</title>
+  <meta name="description" content="Draw a room and hear how it sounds. A real-time simulation of sound waves, computed on your GPU.">
+  <meta name="theme-color" content="#04070c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#panel">Skip to the controls</a>
+  <div class="app" id="app">
+    <main class="stage" id="stage">
+      <canvas class="field" id="field" aria-hidden="true"></canvas>
+      <canvas class="overlay" id="overlay" tabindex="0" role="application"
+        aria-label="The room. Tap to clap. Use the arrow keys to move the cursor, and Enter to act."></canvas>
+      <p class="hint" id="hint" role="status"></p>
+      <div class="time-badge" id="time-badge" role="status" hidden></div>
+    </main>
+
+    <header class="masthead">
+      <h1 class="wordmark">Hollow</h1>
+      <button type="button" class="room-name" id="room-name" aria-haspopup="dialog"></button>
+    </header>
+    <button type="button" class="disclosure" id="disclosure" aria-haspopup="dialog">How it works</button>
+
+    <nav class="rail" id="rail" aria-label="Workspaces"></nav>
+
+    <aside class="panel" id="panel" aria-label="Controls" tabindex="-1"></aside>
+
+    <footer class="readout" id="readout" aria-label="Simulation status"></footer>
+  </div>
+
+  <section class="welcome" id="welcome" aria-labelledby="welcome-title" hidden>
+    <div class="welcome-inner">
+      <p class="welcome-kicker">A sound simulator</p>
+      <h2 class="welcome-title" id="welcome-title">Draw a room.<br><em>Hear it.</em></h2>
+      <p class="welcome-lede">Behind this text, real sound waves are bouncing through a stone cathedral. Your graphics card is calculating every one of them, live. Clap, and you'll hear exactly what that room does to sound.</p>
+      <button type="button" class="welcome-start" id="welcome-start">
+        <span class="welcome-start-ring" aria-hidden="true"></span>
+        Clap to begin
+      </button>
+      <p class="welcome-small">Headphones make it better. You can draw your own rooms next.</p>
+    </div>
+  </section>
+
+  <div class="boot" id="boot" role="status">
+    <p class="boot-word">Hollow</p>
+    <p class="boot-note" id="boot-note">Measuring your GPU</p>
+  </div>
+
+  <dialog class="sheet" id="sheet"></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="sr-only" id="announcer" aria-live="polite"></div>
+
+  <script type="module" src="src/app/main.js"></script>
+</body>
+</html>

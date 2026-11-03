@@ -1,0 +1,797 @@
+{
+  "when": "2026-11-02T13:13:45.366Z",
+  "results": [
+    {
+      "id": "reed",
+      "label": "A reed plays the note of the pipe it sits in, at every rate, whatever noise starts it",
+      "target": "audibly playing; within 10% of the struck pipe; more than 1.4x higher in the shortest pipe",
+      "measured": "8k 1.4 m: 58.4/58.4 Hz (1.01/1.01x struck 57.9), -14 dB; 8k 1 m: 81.2/81.2 Hz (1.00/1.00x struck 81.5), -15 dB; 8k 0.6 m: 134.0/134.0 Hz (1.00/1.00x struck 134.5), -15 dB; 11.025k 1.4 m: 57.5/57.5 Hz (1.01/1.01x struck 57.0), -10 dB; 11.025k 1 m: 80.4/80.4 Hz (0.99/0.99x struck 80.9), -10 dB; 11.025k 0.6 m: 126.2/126.2 Hz (1.01/1.01x struck 125.5), -11 dB; 16k 1.4 m: 55.8/55.8 Hz (1.01/1.01x struck 55.3), -10 dB; 16k 1 m: 78.6/78.6 Hz (0.99/0.99x struck 79.5), -11 dB; 16k 0.6 m: 120.9/120.9 Hz (1.01/1.01x struck 120.2), -11 dB; 22.05k 1.4 m: 56.2/56.2 Hz (1.01/1.01x struck 55.6), -10 dB; 22.05k 1 m: 78.5/78.5 Hz (0.99/0.99x struck 79.2), -11 dB; 22.05k 0.6 m: 121.0/121.0 Hz (1.01/1.01x struck 120.4), -11 dB",
+      "pass": true,
+      "detail": {
+        "rows": [
+          {
+            "rate": 8000,
+            "length": 1.4,
+            "seed": 7,
+            "struck": 57.87473257654401,
+            "blown": 58.374188850887705,
+            "ratio": 1.0086299539040309,
+            "levelDb": -14.379046510243372
+          },
+          {
+            "rate": 8000,
+            "length": 1.4,
+            "seed": 1234567,
+            "struck": 57.87473257654401,
+            "blown": 58.3741900675491,
+            "ratio": 1.0086299749263552,
+            "levelDb": -14.380820211696852
+          },
+          {
+            "rate": 8000,
+            "length": 1,
+            "seed": 7,
+            "struck": 81.50146024946906,
+            "blown": 81.22364469196653,
+            "ratio": 0.9965912812279416,
+            "levelDb": -14.602723329352765
+          },
+          {
+            "rate": 8000,
+            "length": 1,
+            "seed": 1234567,
+            "struck": 81.50146024946906,
+            "blown": 81.22364676644482,
+            "ratio": 0.9965913066812069,
+            "levelDb": -14.620709513952054
+          },
+          {
+            "rate": 8000,
+            "length": 0.6,
+            "seed": 7,
+            "struck": 134.4999034785852,
+            "blown": 134.0469783531117,
+            "ratio": 0.9966325245315466,
+            "levelDb": -14.998932320524831
+          },
+          {
+            "rate": 8000,
+            "length": 0.6,
+            "seed": 1234567,
+            "struck": 134.4999034785852,
+            "blown": 134.04697982638314,
+            "ratio": 0.9966325354852453,
+            "levelDb": -14.998414643256277
+          },
+          {
+            "rate": 11025,
+            "length": 1.4,
+            "seed": 7,
+            "struck": 57.01076080162686,
+            "blown": 57.52912718646068,
+            "ratio": 1.009092430578808,
+            "levelDb": -9.730814041438396
+          },
+          {
+            "rate": 11025,
+            "length": 1.4,
+            "seed": 1234567,
+            "struck": 57.01076080162686,
+            "blown": 57.52912385311899,
+            "ratio": 1.0090923721101672,
+            "levelDb": -9.730407633029046
+          },
+          {
+            "rate": 11025,
+            "length": 1,
+            "seed": 7,
+            "struck": 80.9090565427369,
+            "blown": 80.41825828355078,
+            "ratio": 0.9939339515233764,
+            "levelDb": -10.220699863925153
+          },
+          {
+            "rate": 11025,
+            "length": 1,
+            "seed": 1234567,
+            "struck": 80.9090565427369,
+            "blown": 80.41826067839553,
+            "ratio": 0.9939339811225937,
+            "levelDb": -10.225546192764071
+          },
+          {
+            "rate": 11025,
+            "length": 0.6,
+            "seed": 7,
+            "struck": 125.45544269865378,
+            "blown": 126.17783591201285,
+            "ratio": 1.005758165591064,
+            "levelDb": -10.56392067846707
+          },
+          {
+            "rate": 11025,
+            "length": 0.6,
+            "seed": 1234567,
+            "struck": 125.45544269865378,
+            "blown": 126.17783640668976,
+            "ratio": 1.0057581695341125,
+            "levelDb": -10.56793371015637
+          },
+          {
+            "rate": 16000,
+            "length": 1.4,
+            "seed": 7,
+            "struck": 55.27921269587073,
+            "blown": 55.80339198123781,
+            "ratio": 1.009482394191302,
+            "levelDb": -9.821976467472048
+          },
+          {
+            "rate": 16000,
+            "length": 1.4,
+            "seed": 1234567,
+            "struck": 55.27921269587073,
+            "blown": 55.80338841743612,
+            "ratio": 1.0094823297221913,
+            "levelDb": -9.825538231827817
+          },
+          {
+            "rate": 16000,
+            "length": 1,
+            "seed": 7,
+            "struck": 79.47122660539742,
+            "blown": 78.59098564471186,
+            "ratio": 0.9889237778465877,
+            "levelDb": -10.905252575055172
+          },
+          {
+            "rate": 16000,
+            "length": 1,
+            "seed": 1234567,
+            "struck": 79.47122660539742,
+            "blown": 78.5909836866405,
+            "ratio": 0.9889237532078416,
+            "levelDb": -10.897556982159038
+          },
+          {
+            "rate": 16000,
+            "length": 0.6,
+            "seed": 7,
+            "struck": 120.17863675642376,
+            "blown": 120.9407290666938,
+            "ratio": 1.006341329298107,
+            "levelDb": -10.717545269206196
+          },
+          {
+            "rate": 16000,
+            "length": 0.6,
+            "seed": 1234567,
+            "struck": 120.17863675642376,
+            "blown": 120.94073052961149,
+            "ratio": 1.0063413414709665,
+            "levelDb": -10.720815709677662
+          },
+          {
+            "rate": 22050,
+            "length": 1.4,
+            "seed": 7,
+            "struck": 55.64844942914538,
+            "blown": 56.196993737141966,
+            "ratio": 1.0098573152284327,
+            "levelDb": -9.864677239157487
+          },
+          {
+            "rate": 22050,
+            "length": 1.4,
+            "seed": 1234567,
+            "struck": 55.64844942914538,
+            "blown": 56.196993957449166,
+            "ratio": 1.0098573191873428,
+            "levelDb": -9.855045796045106
+          },
+          {
+            "rate": 22050,
+            "length": 1,
+            "seed": 7,
+            "struck": 79.18866612451681,
+            "blown": 78.46746954538672,
+            "ratio": 0.9908926792882699,
+            "levelDb": -10.712379523757443
+          },
+          {
+            "rate": 22050,
+            "length": 1,
+            "seed": 1234567,
+            "struck": 79.18866612451681,
+            "blown": 78.46746784252196,
+            "ratio": 0.9908926577843749,
+            "levelDb": -10.708986330146182
+          },
+          {
+            "rate": 22050,
+            "length": 0.6,
+            "seed": 7,
+            "struck": 120.37271643905724,
+            "blown": 121.01108776200213,
+            "ratio": 1.0053032891657645,
+            "levelDb": -10.599289757826263
+          },
+          {
+            "rate": 22050,
+            "length": 0.6,
+            "seed": 1234567,
+            "struck": 120.37271643905724,
+            "blown": 121.01108329848547,
+            "ratio": 1.005303252084964,
+            "levelDb": -10.59826621463439
+          }
+        ],
+        "playing": true,
+        "inTune": true,
+        "rising": true
+      },
+      "seconds": 999.362
+    },
+    {
+      "id": "numerical-tail",
+      "label": "Foam on every wall shortens the decay",
+      "target": "decay falls by at least half",
+      "measured": "1.31 s bare, 0.21 s with foam",
+      "pass": true,
+      "detail": {
+        "untreated": 1.3057729903489375,
+        "treated": 0.21134406250519513
+      },
+      "seconds": 8.979
+    },
+    {
+      "id": "door",
+      "label": "A door changes what gets through: 1 kHz tone beyond it, open vs shut",
+      "target": "at least 20 dB",
+      "measured": "47.7 dB",
+      "pass": true,
+      "detail": {
+        "openRms": 0.016802214192622757,
+        "shutRms": 0.00006944266282896632,
+        "difference": 47.67480301838981
+      },
+      "seconds": 5.975
+    },
+    {
+      "id": "interference",
+      "label": "Two equal sources at an equidistant point",
+      "target": "anti-phase null of at least 30 dB; in-phase about +6 dB",
+      "measured": "anti-phase -47.0 dB, in-phase +6.03 dB, against one source alone",
+      "pass": true,
+      "detail": {
+        "nullDb": -46.99700378123046,
+        "boostDb": 6.031487345612566
+      },
+      "seconds": 24.636
+    },
+    {
+      "id": "energy-drift",
+      "label": "Energy drift, lossless room, 200,000 steps",
+      "target": "under 0.1%",
+      "measured": "3.088e-5%",
+      "pass": true,
+      "detail": {
+        "start": 3.08421376647534,
+        "end": 3.0842128139217957,
+        "drift": 3.08848094396232e-7,
+        "peak": 0.210061714053154
+      },
+      "seconds": 6.439
+    },
+    {
+      "id": "stability-margin",
+      "label": "Field bounded at the chosen time step; limit compared",
+      "target": "peak does not grow; compared with lambda^2 = 3/4",
+      "measured": "peak ratio 0.1530 at 0.74, 0.1326 at 0.75",
+      "pass": true,
+      "detail": {
+        "atLimit": {
+          "lambda2": 0.75,
+          "peakRatio": 0.13263027014089973,
+          "checkerboard": 0.000009421514943142028,
+          "energyDrift": 1.5341659322560202e-7,
+          "mean": 0.004099669129648432
+        },
+        "chosen": {
+          "lambda2": 0.74,
+          "peakRatio": 0.15304052808535817,
+          "checkerboard": 0.00003807448008501524,
+          "energyDrift": 2.3939085299581375e-7,
+          "mean": 0.0042011483357407165
+        }
+      },
+      "seconds": 4.527
+    },
+    {
+      "id": "constant-drift",
+      "label": "Constant-pressure drift in a closed room",
+      "target": "measured and bounded",
+      "measured": "6.833e-4 after 200,000 steps (pulse peak 1.0)",
+      "pass": true,
+      "detail": {
+        "meanStart": 0.01662218018669102,
+        "meanEnd": 0.017305453331640352,
+        "drift": 0.0006832731449493319
+      },
+      "seconds": 6.404
+    },
+    {
+      "id": "mode-frequencies",
+      "label": "Mode frequencies vs analytic rectangle",
+      "target": "within 1% below fs/8",
+      "measured": "worst 0.226% across 49 isolated modes up to 2000 Hz",
+      "pass": true,
+      "detail": {
+        "rows": [
+          {
+            "mode": "1,0",
+            "expected": 43.01162633521314,
+            "measured": 43.0145196591874,
+            "error": 0.00006726841602578632
+          },
+          {
+            "mode": "0,1",
+            "expected": 68.818602136341,
+            "measured": 68.81555333536511,
+            "error": 0.000044301989305879806
+          },
+          {
+            "mode": "2,0",
+            "expected": 86.02325267042627,
+            "measured": 86.02552964880225,
+            "error": 0.000026469335967773492
+          },
+          {
+            "mode": "2,1",
+            "expected": 110.16351483136329,
+            "measured": 110.16405208172883,
+            "error": 0.000004876844809843225
+          },
+          {
+            "mode": "0,2",
+            "expected": 137.637204272682,
+            "measured": 137.62746960901637,
+            "error": 0.00007072697906838839
+          },
+          {
+            "mode": "5,0",
+            "expected": 215.05813167606564,
+            "measured": 215.03213474708636,
+            "error": 0.00012088326433729239
+          },
+          {
+            "mode": "5,1",
+            "expected": 225.80079716422614,
+            "measured": 225.7711495784015,
+            "error": 0.00013129973940298028
+          },
+          {
+            "mode": "5,2",
+            "expected": 255.33115751901488,
+            "measured": 255.2897277386043,
+            "error": 0.00016225900831347574
+          },
+          {
+            "mode": "6,0",
+            "expected": 258.0697580112788,
+            "measured": 258.02888728867094,
+            "error": 0.00015837083323053623
+          },
+          {
+            "mode": "0,4",
+            "expected": 275.274408545364,
+            "measured": 275.23106815211605,
+            "error": 0.00015744432429069311
+          },
+          {
+            "mode": "1,4",
+            "expected": 278.6144289156611,
+            "measured": 278.56563159085977,
+            "error": 0.000175142848815318
+          },
+          {
+            "mode": "2,4",
+            "expected": 288.4024965217881,
+            "measured": 288.3497432672775,
+            "error": 0.00018291538785837155
+          },
+          {
+            "mode": "7,0",
+            "expected": 301.0813843464919,
+            "measured": 301.0192217974495,
+            "error": 0.00020646427269930393
+          },
+          {
+            "mode": "7,1",
+            "expected": 308.8462400612965,
+            "measured": 308.77592708357963,
+            "error": 0.00022766337612823773
+          },
+          {
+            "mode": "6,4",
+            "expected": 377.3274440058661,
+            "measured": 377.2068638199375,
+            "error": 0.0003195637843048433
+          },
+          {
+            "mode": "7,4",
+            "expected": 407.9534287146021,
+            "measured": 407.8037680525726,
+            "error": 0.0003668572231420874
+          },
+          {
+            "mode": "0,6",
+            "expected": 412.911612818046,
+            "measured": 412.74877428869684,
+            "error": 0.00039436655277831574
+          },
+          {
+            "mode": "2,6",
+            "expected": 421.7771923658271,
+            "measured": 421.60556040754955,
+            "error": 0.00040692565028191386
+          },
+          {
+            "mode": "10,1",
+            "expected": 435.5869603190619,
+            "measured": 435.40292817165385,
+            "error": 0.000422492324548145
+          },
+          {
+            "mode": "5,6",
+            "expected": 465.55987799637546,
+            "measured": 465.33176022637747,
+            "error": 0.0004899858874861409
+          },
+          {
+            "mode": "2,7",
+            "expected": 489.35059006810246,
+            "measured": 489.0891283764554,
+            "error": 0.000534303415493345
+          },
+          {
+            "mode": "12,1",
+            "expected": 520.7072113961933,
+            "measured": 520.3870367257578,
+            "error": 0.0006148842639937048
+          },
+          {
+            "mode": "5,7",
+            "expected": 527.5547364966027,
+            "measured": 527.2224261492718,
+            "error": 0.0006299068595947625
+          },
+          {
+            "mode": "8,6",
+            "expected": 537.4904650317064,
+            "measured": 537.1420636703489,
+            "error": 0.0006482000779995375
+          },
+          {
+            "mode": "13,1",
+            "expected": 563.3702157551462,
+            "measured": 562.9628848703261,
+            "error": 0.0007230252388726701
+          },
+          {
+            "mode": "7,7",
+            "expected": 568.0792198276575,
+            "measured": 567.6676285687076,
+            "error": 0.0007245314466435951
+          },
+          {
+            "mode": "13,4",
+            "expected": 623.2383171789102,
+            "measured": 622.6889579180865,
+            "error": 0.000881459380274142
+          },
+          {
+            "mode": "12,7",
+            "expected": 706.0198297498448,
+            "measured": 705.2217665940723,
+            "error": 0.0011303693212912907
+          },
+          {
+            "mode": "5,10",
+            "expected": 721.0062413044702,
+            "measured": 720.1516903951457,
+            "error": 0.0011852198502171716
+          },
+          {
+            "mode": "13,7",
+            "expected": 738.0474239505209,
+            "measured": 737.1428267191386,
+            "error": 0.0012256627447328982
+          },
+          {
+            "mode": "16,4",
+            "expected": 741.1990286016301,
+            "measured": 740.2784646884065,
+            "error": 0.0012419928760029509
+          },
+          {
+            "mode": "7,10",
+            "expected": 751.165760668043,
+            "measured": 750.2018834625463,
+            "error": 0.0012831751072353173
+          },
+          {
+            "mode": "2,11",
+            "expected": 761.8766304330379,
+            "measured": 760.869061752683,
+            "error": 0.001322482722409018
+          },
+          {
+            "mode": "2,13",
+            "expected": 898.7680457159119,
+            "measured": 896.7346858325188,
+            "error": 0.0022623855989154017
+          },
+          {
+            "mode": "21,1",
+            "expected": 905.8620203982503,
+            "measured": 905.7636587152324,
+            "error": 0.0001085835158147074
+          },
+          {
+            "mode": "5,13",
+            "expected": 920.1271651244732,
+            "measured": 918.3482772625605,
+            "error": 0.0019333065355939978
+          },
+          {
+            "mode": "13,11",
+            "expected": 941.1195460726548,
+            "measured": 941.995365827665,
+            "error": 0.0009306147754183085
+          },
+          {
+            "mode": "22,0",
+            "expected": 946.2557793746889,
+            "measured": 946.805668475899,
+            "error": 0.0005811209962420913
+          },
+          {
+            "mode": "20,6",
+            "expected": 954.1991406409878,
+            "measured": 954.2169277305783,
+            "error": 0.000018640856853536466
+          },
+          {
+            "mode": "23,0",
+            "expected": 989.267405709902,
+            "measured": 989.4205651234465,
+            "error": 0.00015482104500811312
+          },
+          {
+            "mode": "7,16",
+            "expected": 1141.5191632206618,
+            "measured": 1142.4795119260677,
+            "error": 0.0008412900425573814
+          },
+          {
+            "mode": "20,11",
+            "expected": 1145.8865563396753,
+            "measured": 1148.1119882146731,
+            "error": 0.0019421048817490284
+          },
+          {
+            "mode": "5,17",
+            "expected": 1189.5183899377091,
+            "measured": 1188.2819255402692,
+            "error": 0.001039466399090039
+          },
+          {
+            "mode": "22,13",
+            "expected": 1302.222715206581,
+            "measured": 1302.3734428482453,
+            "error": 0.00011574643868846813
+          },
+          {
+            "mode": "7,20",
+            "expected": 1408.9180245848227,
+            "measured": 1410.5571797509842,
+            "error": 0.0011634141501203346
+          },
+          {
+            "mode": "23,16",
+            "expected": 1480.2249828995589,
+            "measured": 1480.4143602473941,
+            "error": 0.00012793821886744337
+          },
+          {
+            "mode": "35,2",
+            "expected": 1511.6858139176938,
+            "measured": 1512.0232723573215,
+            "error": 0.00022323318544155277
+          },
+          {
+            "mode": "28,16",
+            "expected": 1631.8137148584085,
+            "measured": 1633.0598722862849,
+            "error": 0.0007636640239811304
+          },
+          {
+            "mode": "41,8",
+            "expected": 1847.4181984596773,
+            "measured": 1847.3327541814995,
+            "error": 0.00004625064224717245
+          }
+        ]
+      },
+      "seconds": 7.498
+    },
+    {
+      "id": "wall-absorption",
+      "label": "Wall absorption vs admittance, normal incidence",
+      "target": "within 10%",
+      "measured": "worst 1.36%",
+      "pass": true,
+      "detail": {
+        "rows": [
+          {
+            "material": "Stone",
+            "beta": 0.02,
+            "expected": 0.07689350249903903,
+            "measured": 0.07794262940296293,
+            "error": 0.013643895385530173
+          },
+          {
+            "material": "Wood",
+            "beta": 0.12,
+            "expected": 0.38265306122448983,
+            "measured": 0.38292043548670796,
+            "error": 0.000698738071930028
+          }
+        ]
+      },
+      "seconds": 0.64
+    },
+    {
+      "id": "interface",
+      "label": "Air to heavy gas: reflection and transmission vs theory",
+      "target": "within 5%",
+      "measured": "R 0.3817 (theory 0.3835), T 1.3762 (theory 1.3835)",
+      "pass": true,
+      "detail": {
+        "measuredR": 0.3816707509721322,
+        "expectedR": 0.38347718865598024,
+        "measuredT": 1.3761938403034577,
+        "expectedT": 1.3834771886559802,
+        "errorR": 0.004710678333121385,
+        "errorT": 0.005264523630923151
+      },
+      "seconds": 0.445
+    },
+    {
+      "id": "mass-law",
+      "label": "Glass sheet transmission vs mass law",
+      "target": "within 3 dB from 125 Hz to 2 kHz; about -6 dB per octave",
+      "measured": "worst 1.93 dB, last octave -4.54 dB",
+      "pass": true,
+      "detail": {
+        "rows": [
+          {
+            "frequency": 125,
+            "measuredDb": -13.750969801189225,
+            "expectedDb": -13.757858870134827,
+            "errorDb": 0.006889068945602261
+          },
+          {
+            "frequency": 250,
+            "measuredDb": -19.61193956837803,
+            "expectedDb": -19.63914086983385,
+            "errorDb": 0.02720130145581834
+          },
+          {
+            "frequency": 500,
+            "measuredDb": -25.515186604008612,
+            "expectedDb": -25.624201616926783,
+            "errorDb": 0.10901501291817084
+          },
+          {
+            "frequency": 1000,
+            "measuredDb": -31.19205156701513,
+            "expectedDb": -31.635871110759467,
+            "errorDb": 0.4438195437443362
+          },
+          {
+            "frequency": 2000,
+            "measuredDb": -35.72787277467542,
+            "expectedDb": -37.65423554690141,
+            "errorDb": 1.9263627722259926
+          }
+        ]
+      },
+      "seconds": 1.574
+    },
+    {
+      "id": "foam-absorption",
+      "label": "Foam (12 cells deep) absorbs highs more than lows",
+      "target": "absorption at 2 kHz above absorption at 125 Hz",
+      "measured": "41.5% at 125 Hz, 95.6% at 2 kHz",
+      "pass": true,
+      "detail": {
+        "rows": [
+          {
+            "frequency": 125,
+            "absorption": 0.414952291599492
+          },
+          {
+            "frequency": 250,
+            "absorption": 0.3052212335875686
+          },
+          {
+            "frequency": 500,
+            "absorption": 0.38872726303281635
+          },
+          {
+            "frequency": 1000,
+            "absorption": 0.6258049500137521
+          },
+          {
+            "frequency": 2000,
+            "absorption": 0.9564893625928699
+          }
+        ]
+      },
+      "seconds": 0.873
+    },
+    {
+      "id": "random-rooms",
+      "label": "Random rooms of every material (20 rooms, 30,000 steps each)",
+      "target": "no blow-up, no NaN, energy never rises, stability bound below 4",
+      "measured": "bound 3.9394 of 4, final peak 0.8551, 0 rises, 0 non-finite",
+      "pass": true,
+      "detail": {
+        "worstEigen": 5.323525357538171,
+        "worstPeak": 0.8551320433616638,
+        "energyRises": 0,
+        "nonFinite": 0
+      },
+      "seconds": 74.514
+    },
+    {
+      "id": "doppler",
+      "label": "Doppler shift, 1000 Hz source at 34.3 m/s",
+      "target": "within 1%",
+      "measured": "ahead 1111.5 Hz (theory 1111.1), behind 908.7 Hz (theory 909.1)",
+      "pass": true,
+      "detail": {
+        "errorAhead": 0.0003273166330752247,
+        "errorBehind": 0.00048225026370357686,
+        "measuredAhead": 1111.4747962589724,
+        "measuredBehind": 908.6524997602694
+      },
+      "seconds": 26.141
+    },
+    {
+      "id": "time-reversal",
+      "label": "Time reversal returns to the start after 20,000 steps",
+      "target": "under -60 dB residual",
+      "measured": "-91.7 dB",
+      "pass": true,
+      "detail": {
+        "errorDb": -91.69660534645801,
+        "spreadPeak": 0.10980303585529327
+      },
+      "seconds": 4.789
+    },
+    {
+      "id": "sponge",
+      "label": "Open edge reflection (sponge)",
+      "target": "under -30 dB",
+      "measured": "-39.2 dB",
+      "pass": true,
+      "detail": {
+        "reflectionDb": -39.17666784973416
+      },
+      "seconds": 0.34
+    }
+  ]
+}

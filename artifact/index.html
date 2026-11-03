@@ -1,0 +1,92 @@
+<title>Hollow</title>
+<meta name="description" content="Draw a room and hear how it sounds. A real-time simulation of sound waves, computed on your GPU.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles/main.css">
+<style>
+  :root { color-scheme: dark; }
+  html, body { height: 100%; background: #04070c; }
+  .preview-note {
+    position: fixed;
+    left: max(12px, env(safe-area-inset-left, 0px));
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    z-index: 50;
+    max-width: min(360px, calc(100vw - 24px));
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px 12px;
+    border-radius: 14px;
+    background: rgb(9 13 19 / 0.86);
+    color: #b3bac2;
+    border: 1px solid rgb(255 255 255 / 0.12);
+    font: 12px/1.45 'Geist', system-ui, sans-serif;
+  }
+  .preview-note button {
+    flex: none;
+    background: rgb(255 255 255 / 0.06);
+    border: 1px solid rgb(255 255 255 / 0.18);
+    border-radius: 8px;
+    color: #eef0f2;
+    font: inherit;
+    padding: 2px 10px;
+    cursor: pointer;
+  }
+  .preview-note button:focus-visible { outline: 2px solid #ffb057; outline-offset: 2px; }
+</style>
+
+<a class="skip-link" href="#panel">Skip to the controls</a>
+<div class="app" id="app">
+  <main class="stage" id="stage">
+    <canvas class="field" id="field" aria-hidden="true"></canvas>
+    <canvas class="overlay" id="overlay" tabindex="0" role="application"
+      aria-label="The room. Tap to clap. Use the arrow keys to move the cursor, and Enter to act."></canvas>
+    <p class="hint" id="hint" role="status"></p>
+    <div class="time-badge" id="time-badge" role="status" hidden></div>
+  </main>
+
+  <header class="masthead">
+    <h1 class="wordmark">Hollow</h1>
+    <button type="button" class="room-name" id="room-name" aria-haspopup="dialog"></button>
+  </header>
+  <button type="button" class="disclosure" id="disclosure" aria-haspopup="dialog">How it works</button>
+
+  <nav class="rail" id="rail" aria-label="Workspaces"></nav>
+
+  <aside class="panel" id="panel" aria-label="Controls" tabindex="-1"></aside>
+
+  <footer class="readout" id="readout" aria-label="Simulation status"></footer>
+</div>
+
+<section class="welcome" id="welcome" aria-labelledby="welcome-title" hidden>
+  <div class="welcome-inner">
+    <p class="welcome-kicker">A sound simulator</p>
+    <h2 class="welcome-title" id="welcome-title">Draw a room.<br><em>Hear it.</em></h2>
+    <p class="welcome-lede">Behind this text, real sound waves are bouncing through a stone cathedral. Your graphics card is calculating every one of them, live. Clap, and you'll hear exactly what that room does to sound.</p>
+    <button type="button" class="welcome-start" id="welcome-start">
+      <span class="welcome-start-ring" aria-hidden="true"></span>
+      Clap to begin
+    </button>
+    <p class="welcome-small">Headphones make it better. You can draw your own rooms next.</p>
+  </div>
+</section>
+
+<div class="boot" id="boot" role="status">
+  <p class="boot-word">Hollow</p>
+  <p class="boot-note" id="boot-note">Measuring your GPU</p>
+</div>
+
+<dialog class="sheet" id="sheet"></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="sr-only" id="announcer" aria-live="polite"></div>
+
+<aside class="preview-note" id="preview-note" aria-label="About this copy">
+  <span>This copy runs in a sandbox, so it can't save files, use a microphone or open share links. Everything else is the real simulation. The full version runs locally with <code>node serve.mjs</code>.</span>
+  <button type="button" id="preview-note-close" aria-label="Close this note">Close</button>
+</aside>
+<script>
+  document.getElementById('preview-note-close').addEventListener('click', () => {
+    document.getElementById('preview-note').hidden = true;
+  });
+</script>
+
+<script type="module" src="src/app/main.js"></script>

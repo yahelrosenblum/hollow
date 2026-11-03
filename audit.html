@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hollow audit</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin: 0; padding: 16px; background: #0d1014; color: #d9d4c7; font: 14px/1.5 ui-monospace, monospace; }
+    pre { white-space: pre-wrap; }
+    button { font: inherit; padding: 8px 14px; }
+  </style>
+</head>
+<body>
+  <h1>Hollow physics audit</h1>
+  <p>Runs on this machine's GPU and compares it with the CPU reference. Results are saved to docs/audit.</p>
+  <button id="run" type="button">Run GPU audit</button>
+  <button id="run-audio" type="button">Run audio audit (plays quiet tones)</button>
+  <pre id="log" aria-live="polite"></pre>
+  <script type="module" src="src/audit/gpu-audit-page.js"></script>
+  <script type="module" src="src/audit/audio-audit-page.js"></script>
+</body>
+</html>
