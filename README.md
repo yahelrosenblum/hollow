@@ -36,9 +36,15 @@ Then open http://127.0.0.1:8791 and press **Clap to begin**.
 
 ## Who it's for
 
-- People curious about how sound works, and teachers who want to show it.
+- People curious about how sound works, and teachers who want to show it. See [classroom ideas](docs/CLASSROOM.md).
 - Musicians and sound designers looking for rooms to try, and impulse responses to export.
 - Anyone who likes seeing real physics run live.
+
+It works on a phone layout too:
+
+<img src="docs/images/phone.jpg" alt="Hollow on a phone: the cathedral and its controls" width="260">
+
+**Feedback is the most useful contribution.** If a room sounds wrong, [open an issue](https://github.com/yahelrosenblum/hollow/issues/new/choose). See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## What's in it
 
